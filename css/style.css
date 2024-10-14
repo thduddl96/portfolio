@@ -378,7 +378,7 @@
   color: #fff;
   text-align: center;
   margin: 20px;
-  font-size: 30px;
+  font-size: 50px;
   /* line-height: 30px; */
   word-spacing: 5px;
 }
@@ -567,7 +567,7 @@
 }
 
 .MainPortfolio .main_mokup .line + .pof img {
-  transition: transform 1s;
+  transition: transform 6s;
 }
 
 .MainPortfolio .main_mokup .line:hover + .pof img {
@@ -600,10 +600,12 @@
   min-height: 100vh;
 }
 
-.MainTraining .title h2 {
+/* .MainTraining .title h2 {
   color: var(--white_color);
+} */
+.section .MainTraining {
+  width: 80vh;
 }
-
 .MainTraining .title strong {
   position: absolute;
   top: 50%;
@@ -660,6 +662,8 @@
 }
 .career {
   max-width: 1200px;
+  /* height: 100vh; */
+  /* 높이값을 줬더니 얼추 맞음 */
   text-align: center;
   margin: 0 auto;
 }
@@ -682,7 +686,7 @@
   display: inline-block;
 }
 .career .dropdown .btn {
-  background: url(../images/icon01.svg) 50% 0% no-repeat;
+  background: url(../images/icon01.svg) 50% 50% no-repeat;
   width: 29px;
   height: 29px;
   animation: pin 2s infinite;
@@ -768,7 +772,7 @@
   color: var(--black_color);
 }
 /* art 그림 시작 */
-.MainTraining .tab_con {
+/* .MainTraining .tab_con {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -779,22 +783,22 @@
   font-family: "Pretendard Variable";
 
   border-radius: 46px 0 46px 20px;
-}
+} */
 
-.MainTraining .tab_con .con {
+/* .MainTraining .tab_con .con {
   display: none;
 }
 
 .MainTraining .tab_con .con.on {
   display: flex;
-  /* gap: -10px; */
-}
+   gap: -10px; 
+} */
 
-.MainTraining .tab_con .con .itm {
+/* .MainTraining .tab_con .con .itm {
   flex: 0 0 32%;
 
   text-align: center;
-}
+} */
 
 .MainTraining .tab_con .con .itm figure {
   margin: 0 0 16px 0;
