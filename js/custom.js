@@ -33,8 +33,9 @@ function MainTitleTimeline() {
       trigger: ".MainTitle",
       pin: true,
       scrub: 1,
-
-      end: () => "+=" + document.querySelector(".MainTitle").offsetWidth * 5,
+      end: "+=500",
+      // end: () => "+=" + document.querySelector(".MainTitle").offsetWidth * 5,
+      // 맨 첫번째 페이지 로딩 수정한 거임
     },
   });
 
@@ -260,6 +261,7 @@ function Training() {
       end: () => "+=" + document.querySelector(".MainTitle").offsetWidth * 2,
     },
   });
+  // art 문구 속도감 설정
 
   TL2.from(".MainTraining .title strong", {
     autoAlpha: 0,
@@ -277,6 +279,7 @@ function Training() {
       autoAlpha: 0,
       delay: 5,
       duration: 5,
+      end: "+=100",
     })
     .from(".MainTraining .inner", {
       y: 200,
@@ -287,21 +290,21 @@ function Training() {
     .set({}, {}, "+=10");
 }
 
-function watch() {
-  const d = new Date();
-  const h = d.getHours();
-  const m = d.getMinutes();
-  const s = d.getSeconds();
+// function watch() {
+//   const d = new Date();
+//   const h = d.getHours();
+//   const m = d.getMinutes();
+//   const s = d.getSeconds();
 
-  document.querySelector(
-    ".MainTitle .introduce_wrap .clock .hour"
-  ).style.transform = `rotate(${h * (360 / 12)}deg)`;
-  document.querySelector(
-    ".MainTitle .introduce_wrap .clock .minuite"
-  ).style.transform = `rotate(${m * (360 / 60)}deg)`;
-  document.querySelector(
-    ".MainTitle .introduce_wrap .clock .second"
-  ).style.transform = `rotate(${s * (360 / 60)}deg)`;
-}
+//   document.querySelector(
+//     ".MainTitle .introduce_wrap .clock .hour"
+//   ).style.transform = `rotate(${h * (360 / 12)}deg)`;
+//   document.querySelector(
+//     ".MainTitle .introduce_wrap .clock .minuite"
+//   ).style.transform = `rotate(${m * (360 / 60)}deg)`;
+//   document.querySelector(
+//     ".MainTitle .introduce_wrap .clock .second"
+//   ).style.transform = `rotate(${s * (360 / 60)}deg)`;
+// }
 
-setInterval(watch, 1000);
+// setInterval(watch, 1000);
