@@ -44,12 +44,12 @@
 .more_btn {
   display: inline-block;
   padding: 16px 32px;
-
+  border-radius: 10px;
   background: transparent;
-  color: #123a6e;
+  color: #0d7f72;
   border: none;
 
-  border: 1px solid #123a6e;
+  border: 1px solid #0d7f72;
 
   text-transform: uppercase;
 
@@ -61,12 +61,12 @@
 .more_btn::after {
   content: "\f1e1";
   font-family: "Material Symbols Outlined";
-
+  background: url(../images/logo.png);
   margin: 0 0 0 4px;
   vertical-align: -2px;
 }
 
 .more_btn:hover {
-  background: #123a6e;
+  background: #0d7f72;
   color: #fff;
 }

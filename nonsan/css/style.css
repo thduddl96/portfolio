@@ -493,9 +493,7 @@
   background: var(--primary-color);
   width: 50px;
   height: 50px;
-
   border-radius: 50%;
-
   cursor: pointer;
 }
 
@@ -504,13 +502,14 @@
   height: 24px;
   color: var(--white-color);
 }
-
+/* 도서관 소식 초록 버튼 */
 .MainNotice .main_notice .user_menu {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  /* color: #ccc; */
 }
 
 .MainNotice .main_notice .user_menu > li {
@@ -710,11 +709,11 @@
 
 .MainCategory .tab_content .con .itm strong {
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--white-color);
 }
-
+/* books 에서 글자 크기 조절 */
 .MainCategory .tab_content .con .swiper-pagination {
   top: auto;
   bottom: 0;
@@ -907,7 +906,7 @@
 
 .MainCuration .content_area .inner > * {
   position: relative;
-
+  co
   flex: 1;
   padding: 40px 0;
 }
@@ -917,15 +916,15 @@
   width: 64px;
   height: 64px;
   stroke-width: 1;
-
+  color: #0d7f72;
   margin: 0 0 80px 0;
 }
-
+/*북카페 등 이모지 초록색으로 */
 .MainCuration .content_area .itm::after {
   content: "";
   position: absolute;
   top: 52px;
-  left: 24px;
+  left: 14px;
   z-index: -1;
 
   width: 80px;
@@ -940,11 +939,10 @@
   top: 32px;
   bottom: 0;
   left: -30px;
-
   width: 1px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(5, 35, 35, 0.1);
 }
-
+/* 가운데 선 나눈 거 */
 .MainCuration .content_area .itm strong {
   display: block;
   font-size: 20px;
@@ -956,6 +954,7 @@
 .MainCuration .content_area .itm p {
   line-height: 20px;
   word-break: keep-all;
+  color: #202123;
 }
 
 @media (max-width: 1200px) {
@@ -1000,6 +999,7 @@
   top: 100px;
   left: 0;
   right: 0;
+
   background: var(--deco-color);
 }
 

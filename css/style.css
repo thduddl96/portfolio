@@ -871,7 +871,7 @@
 .MainProfile h3 {
   font-size: 18px;
   font-weight: 500;
-
+  white-space: nowrap;
   margin: 0 0 16px 0;
 }
 
