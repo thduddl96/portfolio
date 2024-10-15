@@ -2,7 +2,7 @@
   // smoothScroll();
   MainTitleTimeline();
   portfolioWrapTimeline();
-  Training();
+  // Training();
 
   $(".MainTraining .tab_menu>li>a").on("click", function (e) {
     e.preventDefault();
@@ -251,14 +251,38 @@ function portfolioWrapTimeline() {
     });
   });
 }
-
-function Training() {
+const art = gsap.timeline();
+art
+  .to(".MainTraining .title strong", {
+    rotation: 0,
+  })
+  .to(".MainTraining .title strong", {
+    rotation: 360,
+    scale: 1,
+  })
+  .to(".MainTraining .title strong", {
+    scale: 10,
+    opacity: 0,
+  });
+ScrollTrigger.create({
+  animation: art,
+  trigger: ".MainTraining",
+  markers: true,
+  //start: "top top",
+  end: "+=1000",
+  pin: true,
+  scrub: 1,
+});
+/*function Training() {
   const TL2 = gsap.timeline({
     scrollTrigger: {
-      trigger: ".MainTraining",
+      trigger: ".title",
       pin: true,
       scrub: 1,
-      end: () => "+=" + document.querySelector(".MainTitle").offsetWidth * 2,
+      //end: () => "+=" + document.querySelector(".MainTitle").offsetWidth * 2,
+      //end: "20% 20%",
+      markers: true,
+      pinSpacing: true,
     },
   });
   // art 문구 속도감 설정
@@ -279,16 +303,16 @@ function Training() {
       autoAlpha: 0,
       delay: 5,
       duration: 5,
-      end: "+=100",
+      // end: "+=100",
     })
     .from(".MainTraining .inner", {
       y: 200,
       autoAlpha: 0,
       delay: 2,
       duration: 5,
-    })
-    .set({}, {}, "+=10");
-}
+    });
+  //.set({}, {}, "+=10");
+}*/
 
 // function watch() {
 //   const d = new Date();
