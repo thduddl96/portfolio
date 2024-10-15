@@ -1,5 +1,5 @@
 :root {
-  --main_color: #f6aa1c;
+  --main_color: #03bda4;
   --bg_color_02: #e3e3e3;
   --bg_color: #3776a7;
   --black_color: #202123;
@@ -396,7 +396,7 @@
 }
 
 .MainPortfolio .con:nth-child(3) h3 {
-  color: #990e17;
+  color: #1ec99b;
 }
 
 .MainPortfolio .con:nth-child(4) h3 {
@@ -445,7 +445,7 @@
 }
 
 .MainPortfolio .con:nth-child(3) .link a {
-  background: #990e17;
+  background: #09a391;
   color: var(--white_color);
 }
 
