@@ -506,7 +506,7 @@
 
   font-size: 20px;
   font-weight: 600;
-
+  
   margin: 0 0 28px 0;
 }
 
@@ -519,6 +519,7 @@
 /* 컬렉션 버튼 찾기 */
 .main_event .event_con .event_text p:nth-of-type(2) {
   margin: 0 0 76px 0;
+  
 }
 
 .main_event .event_con .event_video {
