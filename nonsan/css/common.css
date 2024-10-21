@@ -58,13 +58,13 @@
   white-space: nowrap;
 }
 
-.more_btn::after {
+/* .more_btn::after {
   content: "\f1e1";
   font-family: "Material Symbols Outlined";
-  background: url(../images/logo.png);
+  background: url(../images/Check--Streamline-Core.svg);
   margin: 0 0 0 4px;
   vertical-align: -2px;
-}
+} */
 
 .more_btn:hover {
   background: #0d7f72;

@@ -267,12 +267,13 @@ art
 ScrollTrigger.create({
   animation: art,
   trigger: ".MainTraining",
-  markers: true,
+  //markers: true,
   //start: "top top",
   end: "+=1000",
   pin: true,
   scrub: 1,
 });
+// 스타트와 앤드 스크롤 잘되는 지 확인 할려고 top top 넣은 거임
 /*function Training() {
   const TL2 = gsap.timeline({
     scrollTrigger: {

@@ -495,6 +495,7 @@
 
 .main_event .title h2 {
   text-indent: -0.15rem;
+  font-weight: bold;
 }
 
 .main_event .event_con .event_text {
@@ -506,7 +507,7 @@
 
   font-size: 20px;
   font-weight: 600;
-  
+
   margin: 0 0 28px 0;
 }
 
@@ -519,7 +520,6 @@
 /* 컬렉션 버튼 찾기 */
 .main_event .event_con .event_text p:nth-of-type(2) {
   margin: 0 0 76px 0;
-  
 }
 
 .main_event .event_con .event_video {
@@ -748,7 +748,7 @@
   right: 0;
 
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(https://media.tiffany.com/is/image/tco/WOT-Timeline-50-50-2001TBlue-Desktop);
+  background-image: url(https://wwwoojung.github.io/Boucheron/images/main_history_bg.png);
 }
 /* 커플링 웨딩 이미지 배너 */
 .main_history .history_wrap .H_inner {
